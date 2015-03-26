@@ -1,25 +1,35 @@
-# Ember-cli-pushy
+# ember-cli-pushy
 
-This README outlines the details of collaborating on this Ember addon.
+This ember-cli addon turns [pushy 0.9.2](https://github.com/christophery/pushy/tree/0.9.2)
+(responsive off-canvas navigation menu) into an ember component.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+npm install --save-dev ember-cli-typekit
+```
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```html
+{{#pushy-left}}
+  <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+  </ul>
+{{/pushy-left}}
 
-## Running Tests
+<div class="site-overlay"></div>
 
-* `ember test`
-* `ember test --server`
+<div id="container">
+  <div class="menu-btn">&#9776; Menu</div>
+</div>
+```
 
-## Building
+See [pushy 0.9.2](https://github.com/christophery/pushy/tree/0.9.2) for tips and
+browser compatibility
 
-* `ember build`
+## Configuration
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+At the moment, this addon does not offer any configuration, just like
+[pushy 0.9.2](https://github.com/christophery/pushy/tree/0.9.2) doesn't either.
