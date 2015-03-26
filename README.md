@@ -6,7 +6,7 @@ This ember-cli addon turns [pushy 0.9.2](https://github.com/christophery/pushy/t
 ## Installation
 
 ```
-npm install --save-dev ember-cli-typekit
+npm install --save-dev ember-cli-pushy
 ```
 
 ## Usage
