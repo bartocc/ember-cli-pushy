@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-pushy",
   "version": "0.0.2",
-  "description": "pushy responsive off-canvas navigation menu available as an ember-cli addons.",
+  "description": "pushy responsive off-canvas navigation menu available as an ember-cli addon",
   "directories": {
     "doc": "doc",
     "test": "tests"
