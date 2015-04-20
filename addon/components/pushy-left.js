@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       pushyActiveClass = "pushy-active", //css class to toggle site overlay
       containerClass = "container-push", //container open class
       pushClass = "push-push", //css class to add pushy capability
-      menuBtn = $('.menu-btn, .pushy a'), //css classes to toggle the menu
+      menuBtnClasses = '.menu-btn, .pushy a', //css classes to toggle the menu
       menuSpeed = 200, //jQuery fallback menu speed
       menuWidth = pushy.width() + "px"; //jQuery fallback menu width
 
@@ -70,7 +70,7 @@ export default Ember.Component.extend({
 
     if(cssTransforms3d){
       //toggle menu
-      menuBtn.click(function() {
+      $('body').on('click', menuBtnClasses, function() {
         togglePushy();
       });
       //close menu when clicking site overlay
@@ -86,7 +86,7 @@ export default Ember.Component.extend({
       var state = true;
 
       //toggle menu
-      menuBtn.click(function() {
+      $('body').on('click', menuBtnClasses, function() {
         if (state) {
           openPushyFallback();
           state = false;
